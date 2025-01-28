@@ -6,9 +6,12 @@ CBS neighborhood census data: Ihttps://www.arcgis.com/home/item.html?id=67baac16
 # Methodology
 I started with preprocessing my data in arcGIS. I first combined the species data with the CBS data, for this I did an intersect. I then aggregated the features based on population density, neighborhood name and municipality name while also including the total number of each species as well as the total occurrences. I then calculated the species density by dividing the total occurrences in each neighborhood by the area in km2. I then exported this to a csv file for further analysis in Python. 
 In the Python script I calculate some statistics to see if there is a correlation between species density and population density. This includes a calculating correlation, making a scatterplot, a regression analysis and a regression plot. This script can also be found in this branch: 
-The csv file which I used in this script can also be found in this branch: 
+The csv file which I used in this script can also be found in this branch: SpeciesAndNeighborhoodData.csv
 # Results
-
+The results can be found as pictures in this branch.
+Correlation graph: Correlation_graph.png
+Regression: Regression_graph.png
+Print screen of correlation coefficients and regression analysis: Model_output.JPG
 # Conclusion
 As the regression coefficient is -0.01. There is no correlation between species density and population density for my dataset. This could have to do with the nature of the data. For data on endangered species you do not expect high numbers of occurrences. This was generally the case, there where some high numbers in rural areas which were very big, resulting in a low species density. For neighborhoods within the cities there could be a relatively high species density. This is because these neighborhoods are generally small in size and thus a few occurrences already result in a relatively high species density. 
 
