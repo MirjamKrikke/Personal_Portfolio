@@ -5,7 +5,7 @@ Red list fauna species dataset: https://www.nationaalgeoregister.nl/geonetwork/s
 CBS neighborhood census data: Ihttps://www.arcgis.com/home/item.html?id=67baac160a51405e875f1686a04d6db8 (I found this through the living atlas portal in arcGIS)
 # Methodology
 I started with preprocessing my data in arcGIS. I first combined the species data with the CBS data, for this I did an intersect. I then aggregated the features based on population density, neighborhood name and municipality name while also including the total number of each species as well as the total occurrences. I then calculated the species density by dividing the total occurrences in each neighborhood by the area in km2. I then exported this to a csv file for further analysis in Python. 
-In the Python script I calculate some statistics to see if there is a correlation between species density and population density. This includes a calculating correlation, making a scatterplot, a regression analysis and a regression plot. This script can also be found in this branch: 
+In the Python script I calculate some statistics to see if there is a correlation between species density and population density. This includes a calculating correlation, making a scatterplot, a regression analysis and a regression plot. This script can also be found in this branch: SpeciesAnalysis.py
 The csv file which I used in this script can also be found in this branch: SpeciesAndNeighborhoodData.csv
 # Results
 The results can be found as pictures in this branch.
